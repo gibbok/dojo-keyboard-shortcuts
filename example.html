@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dojo Keyboard Shortcuts Example</title>
+    <script>
+        // configures Dojo
+        var dojoConfig = {
+            parseOnLoad: true,
+            isDebug: true,
+            locale: 'en-us',
+            async: true
+        };
+    </script>
+    <script src="dojo/dojo.js"></script>
+    <script>
+        require([
+            'keyboardShortcuts',
+            'shortcuts',
+            'dojo/topic',
+            'dojo/domReady!'
+        ], function (
+                keyboardShortcuts,
+                shortcuts,
+                topic
+                ) {
+            // initiates keyboardShortcuts
+            keyboardShortcuts().init();
+
+            // detect shortcuts pressed subscribing to this message
+            topic.subscribe('keyboardShortcuts:combo', function (combo) {
+                // use your own logic here, for example, you can detect
+                // combo.shortcut and send a specific command to your application
+                console.log(combo);
+            }.bind(this));
+
+            // look at the console
+            console.clear();
+            console.log('The script detects the following shortcuts:');
+            console.log(shortcuts);
+            console.log('\n');
+            console.log('Detected:');
+        });
+    </script>
+</head>
+
+<body>
+    <p>Open the developer console to see the list of shortcuts and detections.</p>
+    <textarea id="txtArea" rows="4" cols="50" />Shortcuts are not detected by default when focus is on input or textarea tags.</textarea>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{
+    "name": "dojo-keyboard-shortcuts",
+    "description": "Dojo Keyboard Shortcuts is an input capture module for Dojo.",
+    "main": "keyboardShortcuts.js",
+    "keywords": [
+        "dojo",
+        "javascript",
+        "keyboard shortcuts",
+        "keycodes"
+    ],
+    "author": "GibboK",
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "dojo": "^1.10.4",
+        "dijit": "^1.10.4"
+    }
+}
