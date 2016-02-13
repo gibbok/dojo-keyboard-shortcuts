@@ -5,7 +5,7 @@ It is easy to pick up and integrated with any Dojo Application.
 Whenever your application needs to detect custom shortcuts this module is for you.
 
 ### Great! So how do I use it?
-- Install with [Bower](http://bower.io) `bower dojo-keyboard-shortcuts`
+- Install with [Bower](http://bower.io) `bower install dojo-keyboard-shortcuts`
 - Simply describe your shortcuts in [shortcuts.js](shortcuts.js)
 - Subscribe to topic `keyboardShortcuts:combo`.
 - Now, whenever a shortcut is being pressed, a message is returned to the subscriber.
