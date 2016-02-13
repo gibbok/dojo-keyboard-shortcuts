@@ -2,6 +2,11 @@
     "name": "dojo-keyboard-shortcuts",
     "description": "Dojo Keyboard Shortcuts is an input capture module for Dojo.",
     "main": "keyboardShortcuts.js",
+    "moduleType": [ "amd" ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gibbok/dojo-keyboard-shortcuts.git"
+    },
     "keywords": [
         "dojo",
         "javascript",
@@ -17,7 +22,7 @@
         "test",
         "tests"
     ],
-    "dependencies": {
+    "devDependencies": {
         "dojo": "^1.10.4",
         "dijit": "^1.10.4"
     }
