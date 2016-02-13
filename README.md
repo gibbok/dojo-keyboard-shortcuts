@@ -17,11 +17,7 @@ Whenever your application needs to detect custom shortcuts this module is for yo
 - Messages always contain an identifier with its keys.
 
 ### How do I run the example?
-- First install all dependecies in 'dojo-keyboard-shortcuts' folder using:
- - `npm install`
- - `npm bower`
-- Now runs your local server and open the example:
- - `gulp connect`
- - `gulp open`
+- First install all dependecies in 'dojo-keyboard-shortcuts' folder using: `npm install`, `npm bower`.
+- Now runs your local server and open the example: `gulp connect`, `gulp open`.
 - Open Developer Console to see the detection in action.
 
