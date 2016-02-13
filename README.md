@@ -5,12 +5,22 @@ It is easy to pick up and integrated with any Dojo Application.
 Whenever your application needs to detect custom shortcuts this module is for you.
 
 ### Great! So how do I use it?
-- Simply describe your shortcuts in shortcuts.js
-- Subscribe to topic 'keyboardShortcuts:combo'.
-- Now, whenever a shortcut is being pressed, a message is returned.
+- Simply describe your shortcuts in [shortcuts.js](shortcuts.js)
+- Subscribe to topic `keyboardShortcuts:combo`.
+- Now, whenever a shortcut is being pressed, a message is returned to the subscriber.
 
 ### A few extra bits of info
-- A common set of keycodes based on English keyboard in included in keysJs.js.
+- A common set of keycodes based on English keyboard in included in [keysJs.js](keysJs.js).
 - By default detection is not active for textarea or input tags.
-- You can modify or define additional rules in keyboardShortcutsMixin.js
+- You can modify or define additional rules in [keyboardShortcutsMixin.js](keyboardShortcutsMixin.js).
 - Messages always contain an identifier with its keys.
+
+### How do I run the example?
+- First install all dependecies in 'dojo-keyboard-shortcuts' folder:
+ - `npm install`
+ - `npm bower`
+- Now runs a local server and open the example:
+ - `gulp connect`
+ - `gulp open`
+- Open Developer Console to see the detection in action.
+
