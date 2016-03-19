@@ -1,5 +1,6 @@
 {
     "name": "dojo-keyboard-shortcuts",
+    "version": "1.0.5",
     "description": "Dojo Keyboard Shortcuts is an input capture module for Dojo.",
     "main": "keyboardShortcuts.js",
     "moduleType": [ "amd" ],
